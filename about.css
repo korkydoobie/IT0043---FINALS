@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: rgb(44, 48, 53);
+}
+
+#nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1ac18;
+    border: 2px solid black;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#logo-div img {
+    padding-left: 20px;
+}
+
+#navlinks-div a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    margin-right: 60px;
+}
+
+#navlinks-div a:hover {
+    color: rgb(255, 24, 24);
+}
+
+#main-div {
+    margin-top: 10px;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sidebar-div{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 800px;
+    min-height: 400px;
+    background-color: #fb8239;
+    border: 2px solid black;
+    float: left;
+    text-align: center;
+    height: 711px;
+    line-height: 50px;
+}
+
+#sidebar-div img{
+    height: 800px;
+}
+
+
+.content {
+    width: 60%;
+    margin-left: 5px;
+}
+
+.header {
+    border: 2px solid black;
+    padding: 20px;
+    height: 200px;
+    text-align: center;
+    background-color: #fcd8b6;
+    color: black;
+}
+
+.mission, .vision {
+    margin-top: 5px;
+    border: 2px solid black;
+    height: 250px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fcd8b6;
+    color: black;
+}
+
+#footer-div {
+    background-color: #f1ac18;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#footer-div p {
+    color: black;
+    text-align: center;
+}
+
+#footer-div p:hover {
+    color: rgb(255, 24, 24);
+}
+
+#footer-div img {
+    margin-right: 0px;
+}

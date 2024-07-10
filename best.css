@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: rgb(44, 48, 53);
+}
+
+.header {
+    margin-top: 10px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: #e37043;
+    color: black;
+  }
+
+#nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1ac18;
+    border: 2px solid black;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#logo-div img {
+    padding-left: 20px;
+}
+
+#navlinks-div a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    margin-right: 60px;
+}
+
+#navlinks-div a:hover {
+    color: rgb(255, 24, 24);
+}
+
+#main-div {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: #fcd8b6;
+    border: 2px solid black;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.box img {
+    max-width: 100%;
+    max-height: 100%;
+    height: 55%;
+    width: 300px;
+    transition: transform 0.3s ease; 
+}
+
+.box:hover img {
+    transform: scale(1.05); 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    background-color: rgba(0, 0, 0, 0.0); 
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.box:hover .text-overlay {
+    opacity: 1; 
+}
+
+
+.box p {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.more-boxes {
+    display: flex;
+    margin-top: 5px;
+}
+
+.more-boxes .box {
+    padding: 10px;
+    width: 300px;
+    background-color: #fcd8b6;
+    border: 2px solid black;
+    text-align: center;
+}
+
+
+.more-boxes .box img {
+    max-width: 100%; 
+    max-height: 100%;
+    height: 55%;
+}
+
+.more-boxes .box p {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#footer-div {
+    background-color: #f1ac18;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#footer-div p {
+    color: black;
+    text-align: center;
+}
+
+#footer-div a{
+    text-decoration: none;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    
+}
+
+.box:hover .image {
+    opacity: 0.8;
+ }
+  
+.box:hover .middle {
+    opacity: 1;
+}
+  
+.text {
+    background-color: #04AA6D;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}

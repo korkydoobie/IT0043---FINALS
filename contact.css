@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(44, 48, 53);
+    color: #333; 
+}
+
+#nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1ac18;
+    padding: 15px 30px;
+}
+
+#logo-div img {
+    padding-left: 20px;
+}
+
+#navlinks-div a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+#navlinks-div a:hover {
+    color: #ff6600;
+}
+
+#main-div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    padding: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #f1ac18;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: rgb(255, 24, 24);
+    color: white;
+}
+
+#footer-div {
+    background-color: #f1ac18;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#footer-div p {
+    color: #333;
+    margin: 5px 0;
+}
+
+#footer-div a {
+    text-decoration: none;
+}
+
+#footer-div img {
+    margin-right: 0px;
+}
+
+#confirmation p {
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+}
+
+#confirmation a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#confirmation a:hover {
+    color: #333;
+}

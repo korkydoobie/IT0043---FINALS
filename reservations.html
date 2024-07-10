@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reservations.css">
+    <title>Reservations - Korbie's Kitchen</title>
+</head>
+<body>
+    <div id="nav-div">
+        <div id="logo-div">
+            <a href="index.html"> <img src="Korby.png" width="150" height="100" alt="Korbie's Kitchen"> </a>
+        </div>
+        <div id="navlinks-div">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="service.html">Service Offered</a>
+            <a href="branches.html">Branches</a>
+            <a href="reservations.html">Reservations</a>
+        </div>
+    </div>
+
+    <div id="main-div">
+        <div class="content">
+            <div class="header">
+                <h1><b>Event Reservations</b></h1>
+                <p>Book our restaurant for your special events:</p>
+            </div>
+
+            <div class="reservation-form">
+                <form id="reserveForm" target="_blank" action="https://formsubmit.co/krkgrffntn@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Event Reservation from Korbie's Kitchen">
+                    <input type="hidden" name="_next" value="https://korbieskitchen.com/reservations.html">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+
+                    <label for="date">Event Date:</label>
+                    <input type="date" id="date" name="date" required><br><br>
+
+                    <label for="time">Event Time:</label>
+                    <input type="time" id="time" name="time" required><br><br>
+
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" required><br><br>
+
+                    <label for="message">Additional Information:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+                <div id="confirmation" style="display: none;">
+                    <p>Reservation Confirmed!</p>
+                    <a href="index.html">Return to Home Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-div">
+        <a href="index.html"> <img src="Korby.png" width="150" height="100" alt="Korbie's Kitchen"> </a>
+        <a href=""> <p> Kirk Griffin Tan </p> </a>
+        <a href=""> <p> krkgrffntn@gmail.com </p> </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('reserveForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('reserveForm').submit();
+            document.getElementById('reserveForm').style.display = 'none';
+            document.getElementById('confirmation').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

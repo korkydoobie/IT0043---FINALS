@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: rgb(44, 48, 53);
+    color: white; 
+}
+
+#nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1ac18;
+    border: 2px solid black;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+#logo-div img {
+    padding-left: 20px;
+}
+
+#navlinks-div a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    margin-right: 60px;
+}
+
+#navlinks-div a:hover {
+    color: rgb(255, 24, 24);
+}
+
+#main-div {
+    margin-top: 30px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 70%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reservation-form {
+    background-color: #fcd8b6;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.reservation-form label {
+    display: block;
+    margin-top: 10px;
+    color: black;
+}
+
+.reservation-form input, .reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.reservation-form input[type="submit"] {
+    background-color: #f1ac18;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reservation-form input[type="submit"]:hover {
+    background-color: rgb(255, 24, 24);
+    color: white;
+}
+
+#footer-div {
+    background-color: #f1ac18;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 55px;
+    height: 200px;
+}
+
+#footer-div p {
+    color: black;
+}
+
+#footer-div a {
+    text-decoration: none;
+}
+
+#footer-div img {
+    margin-right: 0px;
+}
+
+#confirmation p{
+    color: black;
+}
+
+#confirmation a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#confirmation a:hover {
+    color: #333;
+}

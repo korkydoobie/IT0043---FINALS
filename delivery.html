@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="delivery.css">
+    <title>Order Delivery</title>
+</head>
+<body>
+    <div id="nav-div">
+        <div id="logo-div">
+            <a href="index.html"> <img src="Korby.png" width="150" height="100" alt="Korby's Kitchen"> </a>
+        </div>
+        <div id="navlinks-div">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="service.html">Service Offered</a>
+            <a href="branches.html">Branches</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Place Your Delivery Order</h1>
+        <form id="orderForm" target="_blank" action="https://formsubmit.co/krkgrffntn@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Delivery Order from Korbie's Kitchen">
+            <input type="hidden" name="_next" value="https://korbieskitchen.com/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="order">Order Details:</label>
+            <textarea id="order" name="order" rows="4" required placeholder="Please list the items and quantities"></textarea>
+
+            <input type="submit" value="Place Order">
+        </form>
+
+        <div id="confirmation" style="display: none;">
+            <p>Thank you for ordering!</p>
+            <a href="index.html">Return to Home Page</a>
+        </div>
+    </div>
+
+    <div id="footer-div">
+        <a href="index.html"> <img src="Korby.png" width="150" height="100" alt="Korby's Kitchen"> </a>
+        <a href=""> <p> Kirk Griffin Tan </p> </a>
+        <a href=""> <p> krkgrffntn@gmail.com </p> </a>
+    </div>
+
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('orderForm').submit();
+            document.getElementById('orderForm').style.display = 'none';
+            document.getElementById('confirmation').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
